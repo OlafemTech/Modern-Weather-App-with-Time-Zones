@@ -73,6 +73,5 @@ The app is fully responsive and works beautifully on:
 - 🎯 Weather Description
 - 🕒 Local Time and Time Zone
 
----
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Digital_Civitas
