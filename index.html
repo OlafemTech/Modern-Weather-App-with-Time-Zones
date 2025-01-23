@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Weather App</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a href="">WeatherApp</a>
+    <div class="container">
+      <header>
+        <h5>weahter in</h5>
+        <div class="search-grp">
+          <form action="#">
+            <input type="text" placeholder="type here..." id="search-input" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <h3 id="city"></h3>
+        <h6 id="date"></h6>
+      </header>
+      <section>
+          <div class="temperature"><span id="temperature-degree"></span> C </div>
+          <div class="description">
+              <img src="" alt="" id="description-img">
+              <div id="description-text"></div>
+          </div>
+          <div class="details">
+            <div id="humidity" class = 'grp'>
+                <span><i class="fa-solid fa-temperature-empty"></i> Humidity</span>
+                <h3 id="humidity-degree"></h3>
+            </div>
+            <div id="feelslike" class = 'grp'>
+                <span><i class="fa-solid fa-droplet"></i> feels like</span>
+                <h3 id="feelslike-degree"></h3>
+            </div>
+          </div>
+      </section>
+      <button onclick="getLocationData()" id="loc-btn"><i class="fa-solid fa-location-dot"></i> Current location <i class="fa-solid fa-location-dot"></i></button>
+
+      <div class="timezone-bar">
+        <div class="timezone-content">
+          <i class="fa-regular fa-clock"></i>
+          <div class="timezone-info">
+            <div id="timezone-name"></div>
+            <div id="local-time"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
